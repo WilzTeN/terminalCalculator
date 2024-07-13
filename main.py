@@ -14,12 +14,13 @@ def div(a, b):
         return "Error"
 
 def menu():
+    print("\n---TERMINAL CALCULATOR---\n")
     print("(1): Suma\n(2): Resta\n(3): Multiplicación\n(4): Division\n(5): Salir.")
 
 def principal():
     while True:
         menu()
-        op = int(input("Ingresa la operacion a realizar: "))
+        op = int(input("\nIngresa la operacion a realizar: "))
 
         if op == 5:
             print("Saliendo")
@@ -42,7 +43,7 @@ def principal():
             elif op == 4:
                 result = div(a, b)
 
-            print(f"Este es tu resultado: {result} ")
+            print(f"\n---Este es tu resultado: {result}---")
         else:
             print("Debes selecionar una de las 5 opciones.")
 
